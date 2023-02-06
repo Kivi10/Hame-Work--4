@@ -17,11 +17,15 @@ int[] CreatArray(int size, int lnt)
     return array;
 }
 
+void PrintArray(int[] m)
+{
+    for (int x = 0; x < m.Length; x++)
+    {
+        System.Console.Write(m[x] + "; ");
+    }
+}
+
 int lenght = Promt("Введите длину массива");
 int rnd = Promt("Введите верхний порог чисел для массива");
-int [] myArray = CreatArray(lenght, rnd);
-
-for (int x = 0; x < myArray.Length; x++)
-    {
-        System.Console.Write(myArray[x] + "; ");
-    }
+int[] myArray = CreatArray(lenght, rnd);
+PrintArray(myArray);
